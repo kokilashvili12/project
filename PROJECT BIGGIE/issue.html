@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Issues</title>
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .issue {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    
+    .issue:hover {
+      transform: translateY(-5px);
+    }
+    
+    .issue-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .issue-description {
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .issue .status {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 5px;
+      color: #fff;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        background-color: #f36262;
+      }
+      50% {
+        background-color: #ff9933;
+      }
+      100% {
+        background-color: #5a8dee;
+      }
+    }
+    
+    .issue .status.open {
+      background-color: #f36262;
+    }
+    
+    .issue .status.in-progress {
+      background-color: #ff9933;
+    }
+    
+    .issue .status.closed {
+      background-color: #5a8dee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Issues</h1>
+    
+    <div class="issue">
+      <div class="issue-title">Issue #1: Eror While Logging in. </div>
+      <div class="issue-description">Try Refreshing the page</div>
+   
+    </div>
+    
+    <div class="issue">
+      <div class="issue-title">Issue #2: Sing-Up Code Doesnt Work</div>
+      <div class="issue-description">Try Again. Or Refresh the page</div>
+     
+    </div>
+    
+    <div class="issue">
+      <div class="issue-title">Issue #3: No Sing-up Page</div>
+      <div class="issue-description">Our Team Is Working On Sing-Up Page. We'll be Soon</div>
+      <div class="status closed">Closed</div>
+    </div>
+    
+    <div class="issue">
+      <div class="issue-title">Issue #4: Dony Know Where To Contact Costumer Support</div>
+      <div class="issue-description">Contact Page Will Be Soon</div>
+      <div class="status open">Closed</div>
+    </div>
+    
+    <div class="issue">
+      <div class="issue-title">Issue #5: Website Sucks</div>
+      <div class="issue-description">Its The Best One I Could Of Done So Far</div>
+      <div class="status in-progress">In Progress</div>
+    </div>
+  </div>
+</body>
+</html>
